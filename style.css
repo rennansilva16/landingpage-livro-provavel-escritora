@@ -1,4 +1,29 @@
 body {
   margin: 20px;
 }
-          
+
+.cabecalho {
+}
+.top-container {
+  display: flex;
+  justify-content:space-between;
+  background-color: #cdd8b0;
+  height: 1rem;
+
+}
+
+.menu {
+ background-image: url(https://provavelescritora.com/wp-content/uploads/2017/12/cropped-logonova.jpg);
+ height: 3rem;
+
+}
+
+.menu ul{
+ display: flex;
+ justify-content: space-between;
+ list-style: none;
+}
+
+.imagem-menu{
+background-color: blue;
+}
