@@ -1,16 +1,15 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Times New Roman', serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #f5f5f5;
-  text-align: center;
+  color: #333;
+  text-align: center; /* Centralizar textos por padrão */
   font-size: 18px;
-  background-color: #1b1b1b;
 }
 
 /* Cabeçalho */
@@ -19,7 +18,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #95c0a2;
 }
 
@@ -38,20 +37,13 @@ body {
 #menus ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centralizar menus */
 }
 
 #menus ul li {
   margin: 0 15px;
-  color: #1b1b1b;
+  color: #fff;
   cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-#menus ul li:hover {
-  color: #dde5d3;
 }
 
 /* Oferta do Livro */
@@ -60,7 +52,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 13rem 10rem 0 10rem;
-  background-color: #2c2c2c;
+  background-color: #dde5d3;
 }
 
 .conteudo-livro {
@@ -68,7 +60,6 @@ body {
   flex-direction: column;
   text-align: left;
   padding: 3rem;
-  color: #f5f5f5;
 }
 
 .sobre-livro {
@@ -78,21 +69,15 @@ body {
 .conteudo-livro h2 {
   text-transform: capitalize;
   font-size: 3rem;
-  color: #95c0a2;
-  font-family: 'Georgia', serif;
 }
 
 .conteudo-livro h5 {
   text-transform: capitalize;
   font-size: 2rem;
-  color: #dde5d3;
-  font-family: 'Georgia', serif;
 }
 
 .conteudo-livro p {
   font-size: 1rem;
-  color: #d9d9d9;
-  font-family: 'Times New Roman', serif;
 }
 
 .imagem-livro-oferta {
@@ -101,24 +86,24 @@ body {
 
 .imagem-livro img {
   width: auto;
-  height: 30rem;
+  height: 30rem; /* Mantém a proporção da imagem */
 }
 
 /* Botões de Compra */
 .botoes {
-  background-color: #2c2c2c;
+  background-color: #dde5d3;
   padding: 2rem 0 8rem 0;
 }
 
 .botoes .button-compra {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: center; /* Centralizar botões */
+  gap: 2rem; /* Espaço entre botões */
 }
 
 .botoes button {
   background-color: #95c0a2;
-  color: #1b1b1b;
+  color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -126,24 +111,23 @@ body {
   width: 20%;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .botoes button:hover {
-  background-color: #dde5d3;
+  background-color: #ccb590;
 }
 
 .fas fa-quote-left {
-  font-size: 24px;
-  color: #95c0a2;
-  margin-right: 10px;
-  width: 100%;
+  font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+  color: #95c0a2; /* Cor do ícone */
+  margin-right: 10px; /* Espaço entre o ícone e o nome */
+  width: 100%; /* Alinhar verticalmente com o texto */
   align-items: left;
 }
 
 /* Depoimentos */
 .depoimentos {
-  background-color: #1b1b1b;
+  background-color: #fff;
   padding: 4rem 0 4rem 0;
 }
 
@@ -157,26 +141,21 @@ body {
 }
 
 .card-depoimento {
-  border: solid 1px #95c0a2;
+  border: solid 1px;
   border-radius: 5px;
   padding: 1rem;
-  background-color: #2c2c2c;
 }
 
 .card-depoimento h5 {
   font-size: 1.2rem;
-  color: #f5f5f5;
-  font-family: 'Georgia', serif;
 }
 
 .card-depoimento p {
   font-size: 1rem;
-  color: #d9d9d9;
-  font-family: 'Times New Roman', serif;
 }
 
 #titulo-depoimento {
-  background-color: #1b1b1b;
+  background-color: #fff;
   border-radius: none;
   padding-top: 2rem;
 }
@@ -184,15 +163,11 @@ body {
 #titulo-depoimento h2 {
   font-size: 36px;
   margin: 0 0 1rem 0;
-  color: #95c0a2;
-  font-family: 'Georgia', serif;
 }
 
 #titulo-depoimento h5 {
   font-size: 20px;
   margin: 0 0 3rem 0;
-  color: #dde5d3;
-  font-family: 'Georgia', serif;
 }
 
 /* Equipe de Escrita */
@@ -210,8 +185,8 @@ body {
 }
 
 .card-equipe {
-  background-color: #2c2c2c;
-  border: 1px solid #95c0a2;
+  background-color: #ffffff; /* Fundo branco */
+  border: 1px solid #dde5d3;
   padding: 20px;
   border-radius: 8px;
   margin: 20px 0;
@@ -225,27 +200,22 @@ body {
   padding: 3rem 12rem 8rem;
   text-align: left;
   gap: 10rem;
-  background-color: #262626;
+  background-color: #dde5d3;
 }
 
 #titulo-autora {
   padding: 3rem 0 0 0;
   font-size: 1.8rem;
-  background-color: #262626;
-  color: #f5f5f5;
+  background-color: #dde5d3;
 }
 
 .conteudo-texto-autora h5 {
   font-size: 1.6rem;
-  color: #f5f5f5;
-  font-family: 'Georgia', serif;
 }
 
 .conteudo-texto-autora p {
   font-size: 1rem;
   width: 80%;
-  color: #d9d9d9;
-  font-family: 'Times New Roman', serif;
 }
 
 .img-autora img {
@@ -254,14 +224,14 @@ body {
 }
 
 .equipe-livro {
-  background-color: #1b1b1b;
+  background-color: #fff;
   padding: 0 40rem;
 }
 
 .imagem-membro-equipe {
   height: auto;
   width: 5rem;
-  border: solid 2px #95c0a2;
+  border: solid 2px;
   border-radius: 50%;
   margin: -50px 0;
   position: absolute;
@@ -269,7 +239,6 @@ body {
 
 .texto-membro-equipe {
   margin: 3rem 0 0 0;
-  color: #f5f5f5;
 }
 
 .card-equipe {
@@ -280,8 +249,6 @@ body {
 
 .equipe-livro h2 {
   padding: 5rem 0 0 0;
-  color: #95c0a2;
-  font-family: 'Georgia', serif;
 }
 
 .title-equipe {
@@ -292,7 +259,7 @@ body {
 
 /* Formulário de Newsletter */
 .formulario-newsletter {
-  background-color: #262626;
+  background-color: #dde5d3;
   margin: 0;
   padding: 3rem 0 0 0;
 }
@@ -305,8 +272,6 @@ body {
 
 .formulario-newsletter label {
   margin: 10px 0 5px;
-  color: #f5f5f5;
-  font-family: 'Georgia', serif;
 }
 
 .formulario-newsletter input {
@@ -314,13 +279,11 @@ body {
   margin-bottom: 20px;
   border: 1px solid #95c0a2;
   border-radius: 5px;
-  background-color: #1b1b1b;
-  color: #f5f5f5;
 }
 
 .formulario-newsletter button {
   background-color: #95c0a2;
-  color: #1b1b1b;
+  color: #fff;
   border: none;
   padding: 20px 20px;
   cursor: pointer;
@@ -328,24 +291,20 @@ body {
 }
 
 .formulario-newsletter button:hover {
-  background-color: #dde5d3;
+  background-color: #ccb590;
 }
 
 /* Rodapé */
 .rodape {
-  background-color: #2c2c2c;
+  background-color: #95c0a2;
   padding: 20px;
   text-align: center;
-  color: #f5f5f5;
+  color: #fff;
 }
 
 .rodape a {
-  color: #95c0a2;
+  color: #ffffff;
   text-decoration: none;
-}
-
-.rodape a:hover {
-  color: #dde5d3;
 }
 
 .rodape .container-rodape {
@@ -353,88 +312,4 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 15rem;
-}
-
-/* Media Queries */
-@media (max-width: 1200px) {
-  .oferta-livro {
-    flex-direction: column;
-    padding: 13rem 5rem 0 5rem;
-  }
-
-  .container-depoimentos {
-    flex-direction: column;
-    margin: 0 5rem 0 5rem;
-  }
-
-  .container-informacoes-autora {
-    flex-direction: column;
-    padding: 3rem 5rem 8rem;
-    gap: 2rem;
-  }
-
-  .img-autora img {
-    width: 100%;
-    height: auto;
-  }
-
-  .container-informacoes-equipe {
-    flex-direction: column;
-  }
-
-  .container-informacoes-equipe img {
-    margin: 0 auto;
-  }
-
-  .card-equipe {
-    margin: 20px 0;
-  }
-
-  .formulario-newsletter form {
-    padding: 0 5rem 3rem 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .oferta-livro {
-    padding: 10rem 2rem 0 2rem;
-  }
-
-  .container-depoimentos {
-    margin: 0 2rem 0 2rem;
-  }
-
-  .container-informacoes-autora {
-    padding: 3rem 2rem 5rem;
-  }
-
-  .formulario-newsletter form {
-    padding: 0 2rem 2rem 2rem;
-  }
-
-  .card-equipe {
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .oferta-livro {
-    padding: 8rem 1rem 0 1rem;
-  }
-
-  .container-depoimentos {
-    margin: 0 1rem 0 1rem;
-  }
-
-  .container-informacoes-autora {
-    padding: 3rem 1rem 3rem;
-  }
-
-  .formulario-newsletter form {
-    padding: 0 1rem 1rem 1rem;
-  }
-
-  .card-equipe {
-    margin: 5px 0;
-  }
 }
