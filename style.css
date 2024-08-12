@@ -249,13 +249,13 @@ body {
 }
 
 .img-autora img {
-  width: 40rem;
+  width: 30rem;
   height: auto;
 }
 
 .equipe-livro {
   background-color: #1b1b1b;
-  padding: 0 40rem;
+  padding: 0 30rem;
 }
 
 .imagem-membro-equipe {
@@ -270,12 +270,14 @@ body {
 .texto-membro-equipe {
   margin: 3rem 0 0 0;
   color: #f5f5f5;
+  text-align: left;
 }
 
 .card-equipe {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
 }
 
 .equipe-livro h2 {
@@ -356,38 +358,81 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-  .oferta-livro {
-    flex-direction: column;
-    padding: 13rem 5rem 0 5rem;
-  }
 
-  .container-depoimentos {
-    flex-direction: column;
-    margin: 0 5rem 0 5rem;
-  }
-
-  .container-informacoes-autora {
-    flex-direction: column;
-    padding: 3rem 5rem 8rem;
-    gap: 2rem;
+@media screen and (max-width: 1585px) {
+  .imagem-livro img {
+    width: 30rem;
+    height: auto;
   }
 
   .img-autora img {
-    width: 100%;
+    width: 25rem;
+    height: auto;
+  }
+
+  .equipe-livro {
+    padding: 0 15rem;
+  }
+
+  .equipe-livro h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    margin: -1rem -10rem -1rem -10rem;
+  }
+
+  .oferta-livro {
+    flex-direction: row;
+    padding: 13rem 5rem 0 5rem;
+    margin: -4rem;
+  }
+
+  .botoes {
+    padding: 0 0 7rem;
+  }
+
+  .imagem-livro img {
+    width: 20rem;
+    height: auto;
+  }
+
+  .container-depoimentos {
+    flex-direction: row;
+    margin: 0 10rem;
+  }
+
+  #titulo-depoimento h2 {
+    margin: -3rem 0 0 0;
+  }
+
+  .equipe-escrita {
+    align-items: center;
+  }
+
+  .container-informacoes-autora {
+    flex-direction: row;
+    padding: 3rem 5rem 5rem;
+  }
+
+  .img-autora img {
+    width: 15rem;
     height: auto;
   }
 
   .container-informacoes-equipe {
-    flex-direction: column;
+    flex-direction: row;
+    margin: 0 -5rem;
   }
 
   .container-informacoes-equipe img {
-    margin: 0 auto;
+    margin: none;
   }
 
   .card-equipe {
-    margin: 20px 0;
+    padding: 0 1rem;
   }
 
   .formulario-newsletter form {
@@ -395,17 +440,86 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .oferta-livro {
-    padding: 10rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conteudo-livro {
+    padding: 2rem 3rem 0;
+  }
+
+  .conteudo-livro-oferta {
+    padding: 2rem 4rem 0;
+  }
+
+  .imagem-livro-oferta {
+    padding: 0 0 7rem 0;
   }
 
   .container-depoimentos {
-    margin: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .container-informacoes-autora {
-    padding: 3rem 2rem 5rem;
+    padding: 0 3rem 3rem 10rem;
+    gap: 5rem;
+  }
+
+  .conteudo-texto-autora {
+    margin: 0 -5rem;
+    text-align: justify;
+  }
+
+  .conteudo-texto-autora h5 {
+    display: none;
+  }
+
+  #titulo-autora {
+    padding: 2rem 0 1.25rem;
+  }
+
+  .container-informacoes-equipe {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .oferta-livro {
+    padding: 10rem 5rem 0;
+  }
+
+  .container-informacoes-autora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 10rem;
+  }
+
+  .conteudo-texto-autora {
+    align-items: center;
+    margin: 0 0 -7rem 0;
+    width: 100%;
+  }
+
+  .conteudo-texto-autora h5 {
+    display: none;
+  }
+
+  .img-autora {
+    margin: 0;
+    padding: 0 5rem 0 0;
+  }
+
+  .container-informacoes-equipe {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
   }
 
   .formulario-newsletter form {
